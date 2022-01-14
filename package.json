@@ -1,22 +1,21 @@
 {
-  "name": "JATE",
+  "name": "pwa-text-editor",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start:dev": "",
-    "start": "",
-    "server": "",
-    "build": "",
-    "install": "",
-    "client": ""
+    "test": "node server.js"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mckinleyvj/pwa-text-editor.git"
+  },
+  "author": "mckinleyvj",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "if-env": "^1.0.4"
+    "if-env": "^1.0.4",
+    "util": "^0.12.4"
   },
   "devDependencies": {
     "concurrently": "^5.2.0",
