@@ -24,8 +24,6 @@ export default class {
       if (data === "nothing") {
         this.editor.setValue(header);
       } else {
-        console.log(data[0].content);
-        //console.info('Loaded data from IndexedDB, injecting into editor');
         this.editor.setValue(localData || data[0].content);
       }
     });
@@ -35,7 +33,6 @@ export default class {
     });
 
     this.editor.on('blur', () => {
-      console.log('The editor has lost focus');
       putDb(localStorage.getItem('jatedb'));
     });
   }
