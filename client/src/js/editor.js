@@ -21,8 +21,13 @@ export default class {
     });
 
     getDb().then((data) => {
-      console.info('Loaded data from IndexedDB, injecting into editor');
-      this.editor.setValue(data[0].content);
+      if (data === "nothing") {
+        this.editor.setValue(header);
+      } else {
+        console.log(data[0].content);
+        //console.info('Loaded data from IndexedDB, injecting into editor');
+        this.editor.setValue(localData || data[0].content);
+      }
     });
 
     this.editor.on('change', () => {
