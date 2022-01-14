@@ -20,9 +20,10 @@ export default class {
       tabSize: 2,
     });
 
-    getDb().then((data) => {
+    getDb().then((res) => {
       console.info('Loaded data from IndexedDB, injecting into editor');
-      this.editor.setValue(data || localData || header);
+      this.editor.setValue(res || localData || header);
+      // this.editor.setValue(header || localData || res);
     });
 
     this.editor.on('change', () => {
