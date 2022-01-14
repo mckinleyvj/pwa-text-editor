@@ -35,9 +35,7 @@ export const getDb = async () => {
   if (result.length > 0) {
     console.log("🚀 all info from database", result);
     return result;
-  } else {
-    console.log("Nothing to load.");
-  }
+  } 
 };
 
 initdb();
