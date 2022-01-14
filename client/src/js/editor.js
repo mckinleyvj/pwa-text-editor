@@ -3,7 +3,7 @@ import { header } from './header';
 
 export default class {
   constructor() {
-    const localData = localStorage.getItem('content');
+    const localData = localStorage.getItem('jatedb');
 
     if (typeof CodeMirror === 'undefined') {
       throw new Error('CodeMirror is not loaded');
@@ -20,19 +20,19 @@ export default class {
       tabSize: 2,
     });
 
-    getDb().then((res) => {
+    getDb().then((data) => {
       console.info('Loaded data from IndexedDB, injecting into editor');
-      this.editor.setValue(res || localData || header);
-      // this.editor.setValue(header || localData || res);
+      console.log();
+      this.editor.setValue(data[0].content);
     });
 
     this.editor.on('change', () => {
-      localStorage.setItem('content', this.editor.getValue());
+      localStorage.setItem('jatedb', this.editor.getValue());
     });
 
     this.editor.on('blur', () => {
       console.log('The editor has lost focus');
-      putDb(localStorage.getItem('content'));
+      putDb(localStorage.getItem('jatedb'));
     });
   }
 }

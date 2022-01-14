@@ -31,7 +31,7 @@ module.exports = () => {
         fingerprints: false,
         inject: true,
         name: 'PWA Text Editor',
-        short_name: 'PWATextEditor',
+        short_name: 'TextEditor',
         description: 'Create and edit texts',
         background_color: '#225ca3',
         theme_color: '#225ca3',
