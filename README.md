@@ -1,7 +1,7 @@
 # pwa-text-editor
 
 ![webpack](https://img.shields.io/static/v1?label=webpack&message=webpack&color=red)
-![@babel/core](<https://img.shields.io/static/v1?label=@babel/core&message=(https://www.npmjs.com/package/@babel/core/core)&color=green>)
+![@babel/core](https://img.shields.io/static/v1?label=@babel/core&message=@babel/core&color=green)
 ![idb](https://img.shields.io/static/v1?label=idb&message=idb&color=yellow)
 
 ## Table of Contents
@@ -60,7 +60,7 @@ npm run start
 
 ## Deployment
 
-Please visit the live site at https://mac-pwa-text-editor.herokuapp.com/
+Please visit the live site at <a href="https://mac-pwa-text-editor.herokuapp.com/" target="_blank">Heroku</a>
 
 [Back to top](#pwa-text-editor)
 
