@@ -1,7 +1,7 @@
 # pwa-text-editor
 
 ![webpack](https://img.shields.io/static/v1?label=webpack&message=webpack&color=red)
-![@babel/core](https://img.shields.io/static/v1?label=@babel/core&message=https://www.npmjs.com/package/@babel/core/core&color=green)
+![@babel/core](<https://img.shields.io/static/v1?label=@babel/core&message=(https://www.npmjs.com/package/@babel/core/core)&color=green>)
 ![idb](https://img.shields.io/static/v1?label=idb&message=idb&color=yellow)
 
 ## Table of Contents
