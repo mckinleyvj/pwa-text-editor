@@ -60,7 +60,7 @@ npm run start
 
 ## Deployment
 
-Please visit the live site at <a href="https://mac-pwa-text-editor.herokuapp.com/" target="_blank">Heroku</a>
+Please visit the live site at <a href="https://mac-text-editor.herokuapp.com/" target="_blank">Heroku</a>
 
 [Back to top](#pwa-text-editor)
 
